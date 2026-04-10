@@ -1,0 +1,13 @@
+<script>
+document.getElementById("btnMore").addEventListener("click", function() {
+    let moreText = document.getElementById("moreText");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        this.innerText = "Tampilkan Lebih Sedikit";
+    } else {
+        moreText.style.display = "none";
+        this.innerText = "Tampilkan Lebih Banyak";
+    }
+});
+</script>

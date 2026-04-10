@@ -1,0 +1,15 @@
+<script>
+document.getElementById("formKontak").addEventListener("submit", function(e) {
+    let nama = document.getElementById("nama").value;
+    let email = document.getElementById("email").value;
+    let pesan = document.getElementById("pesanError");
+
+    if (nama === "" || email === "") {
+        e.preventDefault(); // mencegah form dikirim
+        pesan.innerText = "Nama dan Email wajib diisi!";
+    } else {
+        pesan.innerText = "";
+        alert("Form berhasil dikirim!");
+    }
+});
+</script>
